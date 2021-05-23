@@ -1,8 +1,4 @@
 {
-  "npmScope": "toggles",
-  "affected": {
-    "defaultBase": "master"
-  },
   "implicitDependencies": {
     "package.json": {
       "dependencies": "*",
@@ -10,6 +6,10 @@
     },
     ".eslintrc.json": "*"
   },
+  "affected": {
+    "defaultBase": "master"
+  },
+  "npmScope": "toggles",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/nx-cloud",
@@ -22,5 +22,9 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "api": {
+      "tags": ["app"]
+    }
+  }
 }
